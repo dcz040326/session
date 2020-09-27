@@ -14,6 +14,10 @@ public class TestController {
         return "OK";
     }
 
+    public  void  gittext(){
+
+        System.out.println("测试提交");
+    }
     @GetMapping("/get")
     public String getSession(HttpSession session){
         return (String)session.getAttribute("msg");
