@@ -23,6 +23,11 @@ public class TestController {
 
         System.out.println("测试分支提交");
     }
+    public  void  gittextfenzhi1(){
+
+        System.out.println("测试分支提交1");
+    }
+
     @GetMapping("/get")
     public String getSession(HttpSession session){
         return (String)session.getAttribute("msg");
