@@ -8,6 +8,10 @@ import javax.servlet.http.HttpSession;
 @RestController
 public class TestController {
 
+    public static void main(String[] args) {
+        System.out.println(5121);
+    }
+
     @GetMapping("/set")
     public String setSession(HttpSession session){
         session.setAttribute("msg","Hello");
@@ -27,6 +31,7 @@ public class TestController {
 
         System.out.println("测试分支提交1");
     }
+
 
     @GetMapping("/get")
     public String getSession(HttpSession session){
