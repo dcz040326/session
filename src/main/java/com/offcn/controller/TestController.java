@@ -14,6 +14,12 @@ public class TestController {
         return "OK";
     }
 
+    @GetMapping("/set")
+    public void testgitfenzhi(){
+
+        System.out.println("第二次测试分支");
+    }
+
     @GetMapping("/get")
     public String getSession(HttpSession session){
         return (String)session.getAttribute("msg");
